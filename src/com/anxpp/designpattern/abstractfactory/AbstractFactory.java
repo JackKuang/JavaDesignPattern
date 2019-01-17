@@ -3,7 +3,7 @@ package com.anxpp.designpattern.abstractfactory;
 public class AbstractFactory {
 	public static void main(String args[]){
 		IFactory bigfactory = new BigFactory();
-		IFactory smallfactory = new BigFactory();
+		IFactory smallfactory = new SmallFactory();
 		bigfactory.producePhone().run();
 		bigfactory.produceHeadset().play();
 		smallfactory.producePhone().run();
